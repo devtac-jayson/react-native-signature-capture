@@ -29,7 +29,7 @@ import com.rssignaturecapture.utils.ControlTimedPoints;
 import com.rssignaturecapture.utils.Bezier;
 
 public class RSSignatureCaptureView extends View {
-	private static final float STROKE_WIDTH = 5f;
+	private static final float STROKE_WIDTH = 2f;
 	private static final float HALF_STROKE_WIDTH = STROKE_WIDTH / 2;
 
 	private boolean mIsEmpty;
@@ -69,8 +69,8 @@ public class RSSignatureCaptureView extends View {
 		mPaint.setStrokeCap(Paint.Cap.ROUND);
 		mPaint.setStrokeJoin(Paint.Join.ROUND);
 
-		mMinWidth = convertDpToPx(8);
-		mMaxWidth = convertDpToPx(16);
+		mMinWidth = convertDpToPx(4);
+		mMaxWidth = convertDpToPx(8);
 		mVelocityFilterWeight = 0.4f;
 		mPaint.setColor(Color.BLACK);
 
